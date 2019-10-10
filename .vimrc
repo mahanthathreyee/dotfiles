@@ -60,6 +60,9 @@ set tabstop=4
 set autoindent
 set expandtab
 
+" Line Number
+set number
+
 "######################## Plug Plugins #######################
 
 call plug#begin('~/.vim/plugged')

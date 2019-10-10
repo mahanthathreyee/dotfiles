@@ -1,0 +1,32 @@
+import React from 'react';
+import Nav from './sections/Nav';
+import Welcome from './sections/welcome/welcome';
+import Projects from './sections/projects/projects';
+import '../static/main.scss';
+
+function Wrapper() {
+    handleScroll = () => {
+        if (window.scrollY - (window.innerHeight / 2) >= 0) {
+            window.removeEventListener('scroll', this.handleScroll);
+        }
+    }
+
+
+    render() {
+        return (
+            <div>
+                <Nav />
+                <Welcome />
+                <Projects />
+            </div>
+        );
+    }
+}
+
+function mainPage() {
+    return (
+        <Wrapper />
+    );
+}
+
+export default mainPage;
