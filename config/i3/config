@@ -105,9 +105,9 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:  Bash"
-set $ws2 "2:  Firefox"
-set $ws3 "3"
+set $ws1 "1: Bash"
+set $ws2 "2: Firefox"
+set $ws3 "3: Dolphin"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -143,6 +143,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 # setting application specific to a workspace
 assign [class="kitty"] $ws1
 assign [class="firefoxdeveloperedition"] $ws2
+assign [class="dolphin"] $ws3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
