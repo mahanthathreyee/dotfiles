@@ -52,7 +52,7 @@
     .titlebar-spacer { display: none; }
     #nav-bar-customization-target { display: flex; }
     #urlbar-container { margin: auto !important; min-width: 70% !important; transition: all 0.25s linear !important; text-align: center !important; }
-    #urlbar-container:focus-within, #urlbar-container:hover { min-width: 80% !important; }
+    #navigator-toolbox:hover #urlbar-container, #urlbar-container:focus-within, #urlbar-container:hover { min-width: 80% !important; }
     #urlbar-results { text-align: left; }
     #titlebar { background: inherit; z-index: -1; }
     #TabsToolbar { display: grid; position: absolute; bottom: 7px; background: inherit; width: 100%; transition: all 0.25s linear; }
