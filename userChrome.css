@@ -1,38 +1,38 @@
 @-moz-document url(chrome://browser/content/browser.xhtml) {
-    /* tabs on bottom of window */
-    /* requires that you set
-     * toolkit.legacyUserProfileCustomizations.stylesheets = true
-     * in about:config
-     */
-    #mainPopupSet ~ box { -moz-box-ordinal-group: 10; }
-    #titlebar { -moz-box-ordinal-group: 10; }
-    #urlbar {
-        top: unset !important;
-        bottom: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-        box-shadow: none !important;
-        display: flex !important;
-        flex-direction: column !important;
-    }
-    #urlbar-input-container {
-        order: 2;
-    }
-    #urlbar > .urlbarView {
-        order: 1;
-        border-bottom: 1px solid #666;
-    }
-    #urlbar-results {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .search-one-offs { display: none !important; }
-    .tab-background { border-top: none !important; }
+	/* tabs on bottom of window */
+	/* requires that you set
+	 * toolkit.legacyUserProfileCustomizations.stylesheets = true
+	 * in about:config
+	 */
+	#mainPopupSet ~ box { -moz-box-ordinal-group: 10; }
+	#titlebar { -moz-box-ordinal-group: 10; }
+	#urlbar {
+		top: unset !important;
+		bottom: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+		box-shadow: none !important;
+		display: flex !important;
+		flex-direction: column !important;
+	}
+	#urlbar-input-container {
+		order: 2;
+	}
+	#urlbar > .urlbarView {
+		order: 1;
+		border-bottom: 1px solid #666;
+	}
+	#urlbar-results {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.search-one-offs { display: none !important; }
+	.tab-background { border-top: none !important; }
     #navigator-toolbox { transform: translateY(0) !important; }
-    #navigator-toolbox::after { border: none; }
-    #TabsToolbar .tabbrowser-arrowscrollbox,
-    #tabbrowser-tabs, .tab-stack { min-height: 28px !important; }
-    .tabbrowser-tab { font-size: 80%; }
-    .tab-content { padding: 0 5px; }
-    .tab-close-button .toolbarbutton-icon { width: 12px !important; height: 12px !important; }
+	#navigator-toolbox::after { border: none; }
+	#TabsToolbar .tabbrowser-arrowscrollbox,
+	#tabbrowser-tabs, .tab-stack { min-height: 28px !important; }
+	.tabbrowser-tab { font-size: 80%; }
+	.tab-content { padding: 0 5px; }
+	.tab-close-button .toolbarbutton-icon { width: 12px !important; height: 12px !important; }
 
     #tabbrowser-tabs[movingtab] .tabbrowser-tab:not([pinned]),
     #tabbrowser-tabs[movingtab] .tabbrowser-tab[selected]:not([pinned]),
@@ -41,7 +41,22 @@
     #tabbrowser-tabs .tabbrowser-tab:hover:not([pinned]) { max-width: 150px !important; }
     #tabbrowser-tabs .tabbrowser-tab:hover:not([pinned])  .tab-close-button { visibility: visible  !important; display: -moz-box !important;}
     #tabbrowser-tabs .tabbrowser-tab[selected]:not([pinned]) { max-width: 250px !important; }
-
+   
     #tabbrowser-tabs .tabbrowser-tab:hover:not([pinned])  .tab-close-button, 
     #tabbrowser-tabs .tabbrowser-tab[selected]:not([pinned]) .tab-close-button { visibility: visible  !important; display: -moz-box !important;}
+    #tabbrowser-tabs .tab-icon-image { height: 20px; width: 20pxpx !important; }
+
+    #navigator-toolbox { display: flex; flex-direction: column; }
+    #PersonalToolbar { order: -1; }
+    .titlebar-buttonbox-container { display: none; }
+    .titlebar-spacer { display: none; }
+    #nav-bar-customization-target { display: flex; }
+    #urlbar-container { margin: auto !important; min-width: 70% !important; transition: all 0.25s linear !important; text-align: center !important; }
+    #urlbar-container:focus-within, #urlbar-container:hover { min-width: 80% !important; }
+    #urlbar-results { text-align: left; }
+    #titlebar { background: inherit; z-index: -1; }
+    #TabsToolbar { display: grid; position: absolute; bottom: 7px; background: inherit; width: 100%; transition: all 0.25s linear; }
+    #navigator-toolbox:hover #TabsToolbar { bottom: 40px !important; }
+    .tab-context-line { border-radius: 2px; margin: -3px 2px 0; background: #FA9F42; height: 2px; } 
+    .tabbrowser-tab[pinned="true"] .tab-context-line { background: #114B5F !important; }
 }
