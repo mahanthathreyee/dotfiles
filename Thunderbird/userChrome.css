@@ -1,0 +1,6 @@
+@import "Monterail-Theme/theme.css";
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#threadTree treechildren::-moz-tree-cell-text(unread) {
+ color: #8afff3 !important;
+}

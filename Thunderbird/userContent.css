@@ -1,0 +1,18 @@
+body > #conversationWrapper,
+.conversationHeaderWrapper,
+.replyBox,
+.quickReply .headerField > label,
+.quickReply .headerField > .headerEntry > input,
+.quickReply .bodyWrapper > .body 
+{
+    background: #fff !important;
+    color: #000 !important;
+}
+
+body > #conversationWrapper {
+    border: 7px solid #000;
+}
+
+.replyBox {
+    border: 1px solid #000 !important;
+}
