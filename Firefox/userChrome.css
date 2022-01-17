@@ -105,6 +105,10 @@
 	#urlbar-input-container {
 		background: #333;
 	}
+	::selection {
+		background: #6969B3 !important;
+		color: #F7F4F3 !important;
+	}
 	
 	/************************************/
 	/* Main menu hamburger to left side */
