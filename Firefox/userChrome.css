@@ -34,7 +34,6 @@
 	/***********************************/
 	.tab-context-line {
 		border-radius: 2px;
-		background: #fa9f42;
 		height: 2px;
 	}
 	.tabbrowser-tab[pinned="true"] .tab-context-line {
