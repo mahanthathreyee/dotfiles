@@ -3,10 +3,10 @@
 	/* URL + tabs bar position bottom */
 	/**********************************/
 	#mainPopupSet ~ box {
-		-moz-box-ordinal-group: 10;
+		order: 10;
 	}
 	#titlebar {
-		-moz-box-ordinal-group: 10;
+		order: 10;
 	}
 	#urlbar {
 		top: unset !important;
