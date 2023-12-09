@@ -3,21 +3,13 @@
     /* URL + tabs bar position bottom */
     /**********************************/
     #navigator-toolbox {
-        position: fixed !important;
-        bottom: 0;
-        z-index: 1;
+	order: 2;
     }
     #browser {
-        max-height: calc(100% - 41px);
-    }
-    #navigator-toolbox {
-        width: 100%;
+	order: 1;
     }
     .titlebar-spacer {
         display: none;
-    }
-    #mainPopupSet ~ box {
-        order: 10;
     }
     #titlebar {
         order: 10;
@@ -25,7 +17,7 @@
     #urlbar {
         top: unset !important;
         bottom: calc(
-        (var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2
+  	      (var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2
         ) !important;
         box-shadow: none !important;
         display: flex !important;
