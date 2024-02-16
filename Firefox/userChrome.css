@@ -138,4 +138,11 @@
     #forward-button {
         display: none !important;
     }
+
+    /***********************************************/
+    /* Moves bookmark to the botoom of the browser */
+    /***********************************************/
+    #PersonalToolbar {
+        order: 10;
+    }
 }
